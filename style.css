@@ -1,0 +1,597 @@
+/* ===============================
+   GENERAL
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #222222;
+    transition: 0.3s;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    scroll-margin-top: 75px;
+}
+
+
+/* ===============================
+   NAVBAR
+================================ */
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.navbar-brand {
+    color: #2563eb;
+    font-size: 1.3rem;
+}
+
+.nav-link {
+    color: #333;
+    font-weight: 500;
+    margin-left: 8px;
+}
+
+.nav-link:hover {
+    color: #2563eb;
+}
+
+
+/* ===============================
+   HERO
+================================ */
+
+.hero-section {
+    background: linear-gradient(135deg, #f8fafc, #eaf2ff);
+}
+
+.welcome-text {
+    color: #2563eb;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.hero-section h1 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.hero-section h1 span {
+    color: #2563eb;
+}
+
+.hero-section h2 {
+    font-size: 1.6rem;
+    margin-top: 10px;
+}
+
+.hero-description {
+    max-width: 650px;
+    color: #555;
+    font-size: 1.05rem;
+    margin-top: 20px;
+}
+
+.profile-card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.profile-circle {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2563eb;
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+
+/* ===============================
+   COMMON SECTION
+================================ */
+
+.section-padding {
+    padding: 90px 0;
+}
+
+.alternate-section {
+    background-color: #f8fafc;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title p {
+    color: #2563eb;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+
+/* ===============================
+   ABOUT
+================================ */
+
+.about-box {
+    text-align: center;
+    padding: 40px;
+    border-radius: 15px;
+    background: #f8fafc;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.about-box i {
+    font-size: 70px;
+    color: #2563eb;
+}
+
+.about-box h3 {
+    margin-top: 20px;
+}
+
+.about-text {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+
+/* ===============================
+   EDUCATION
+================================ */
+
+.education-card {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    max-width: 850px;
+    margin: auto;
+    padding: 35px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.education-icon {
+    width: 80px;
+    height: 80px;
+    min-width: 80px;
+    border-radius: 50%;
+    background: #2563eb;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+}
+
+.cgpa-badge {
+    display: inline-block;
+    background: #2563eb;
+    color: white;
+    padding: 7px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+
+/* ===============================
+   SKILLS
+================================ */
+
+.skill-card {
+    height: 100%;
+    padding: 30px;
+    text-align: center;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+}
+
+.skill-card > i {
+    font-size: 45px;
+    color: #2563eb;
+}
+
+.skill-card h4 {
+    margin: 15px 0;
+}
+
+.skill-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skill-list span {
+    background: #eaf2ff;
+    color: #2563eb;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+
+/* ===============================
+   PROJECTS
+================================ */
+
+.project-card {
+    height: 100%;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+}
+
+.project-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    background: #eaf2ff;
+    color: #2563eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.project-card h3 {
+    font-size: 1.3rem;
+}
+
+.project-card p {
+    color: #555;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-top: 15px;
+}
+
+.project-tags span {
+    padding: 5px 10px;
+    background: #f1f5f9;
+    border-radius: 15px;
+    font-size: 12px;
+}
+
+
+/* ===============================
+   INTERNSHIP
+================================ */
+
+.internship-card {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    gap: 30px;
+    padding: 35px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.internship-icon {
+    min-width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background: #2563eb;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.internship-card .date {
+    color: #2563eb;
+    font-weight: bold;
+}
+
+
+/* ===============================
+   CERTIFICATES
+================================ */
+
+.certificate-card {
+    height: 100%;
+    text-align: center;
+    background: white;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.certificate-card i {
+    font-size: 45px;
+    color: #2563eb;
+}
+
+.certificate-card h3 {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.certificate-card span {
+    color: #777;
+    font-size: 14px;
+}
+
+
+/* ===============================
+   CONTACT
+================================ */
+
+.contact-info {
+    margin-top: 30px;
+}
+
+.contact-item {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.contact-item > i {
+    color: #2563eb;
+    font-size: 24px;
+}
+
+.contact-item h5 {
+    margin-bottom: 3px;
+}
+
+.contact-item p {
+    margin: 0;
+    color: #666;
+}
+
+.contact-item a {
+    color: #2563eb;
+}
+
+.form-control {
+    padding: 12px;
+}
+
+.form-control:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 0.2rem rgba(37, 99, 235, 0.15);
+}
+
+.error-message {
+    color: #dc3545;
+    display: block;
+    margin-top: 5px;
+}
+
+
+/* ===============================
+   FOOTER
+================================ */
+
+footer {
+    background: #111827;
+    color: white;
+    padding: 40px 0 20px;
+}
+
+footer h5 {
+    color: white;
+}
+
+footer p {
+    color: #cbd5e1;
+}
+
+.social-links {
+    margin: 20px 0;
+}
+
+.social-links a {
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+.social-links a:hover {
+    color: #60a5fa;
+}
+
+.copyright {
+    font-size: 14px;
+}
+
+
+/* ===============================
+   DARK MODE
+================================ */
+
+body.dark-mode {
+    background-color: #111827;
+    color: #f1f5f9;
+}
+
+body.dark-mode .navbar {
+    background-color: rgba(17, 24, 39, 0.97);
+}
+
+body.dark-mode .navbar-brand,
+body.dark-mode .nav-link {
+    color: #f1f5f9;
+}
+
+body.dark-mode .nav-link:hover {
+    color: #60a5fa;
+}
+
+body.dark-mode .hero-section {
+    background: linear-gradient(135deg, #111827, #1e293b);
+}
+
+body.dark-mode .hero-description,
+body.dark-mode .about-text,
+body.dark-mode .project-card p,
+body.dark-mode .contact-item p {
+    color: #cbd5e1;
+}
+
+body.dark-mode .profile-card,
+body.dark-mode .about-box,
+body.dark-mode .education-card,
+body.dark-mode .skill-card,
+body.dark-mode .project-card,
+body.dark-mode .internship-card,
+body.dark-mode .certificate-card {
+    background-color: #1e293b;
+    color: #f1f5f9;
+}
+
+body.dark-mode .alternate-section {
+    background-color: #0f172a;
+}
+
+body.dark-mode .skill-list span {
+    background-color: #263b5c;
+}
+
+body.dark-mode .project-tags span {
+    background-color: #334155;
+}
+
+body.dark-mode .form-control {
+    background-color: #1e293b;
+    color: white;
+    border-color: #475569;
+}
+
+body.dark-mode .form-control::placeholder {
+    color: #94a3b8;
+}
+
+
+/* ===============================
+   RESPONSIVE DESIGN
+================================ */
+
+@media (max-width: 991px) {
+
+    .navbar-nav {
+        margin-top: 15px;
+    }
+
+    .hero-section h1 {
+        font-size: 3rem;
+    }
+
+    .profile-card {
+        max-width: 400px;
+        margin: auto;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .section-padding {
+        padding: 70px 20px;
+    }
+
+    .hero-section h1 {
+        font-size: 2.7rem;
+    }
+
+    .hero-section h2 {
+        font-size: 1.3rem;
+    }
+
+    .education-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .internship-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .internship-icon {
+        margin: auto;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .hero-section h1 {
+        font-size: 2.2rem;
+    }
+
+    .section-title h2 {
+        font-size: 2rem;
+    }
+
+    .profile-circle {
+        width: 140px;
+        height: 140px;
+        font-size: 3rem;
+    }
+
+    .profile-card {
+        padding: 25px;
+    }
+
+    .filter-btn {
+        margin: 3px;
+    }
+
+}
